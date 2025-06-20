@@ -53,9 +53,11 @@ const chart = (() => {
   return Plot.plot({
     width,
     title: `Precio "${selectProducto} (${unidad})" en Gran Buenos Aires`,
+    style:{fontSize: "1em"},
     x: { grid: true },
     y: { type: escalaLineal ? "linear" : "log", label: `Precio (escala ${escalaLineal ? "lineal" : "logarítmica"})`, grid: true, tickFormat: "$,d" },
     marginLeft: 80,
+    marginTop: 40,
     marks: [
       Plot.ruleY([0]),
       Plot.lineY(dataPlot, {
