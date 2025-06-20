@@ -72,7 +72,7 @@ const chart = (() => {
         r: 2,
         title: (d) =>
           `${selectProducto}\n${moment(d.fecha).format(
-            "D MMM YYYY"
+            "MMM YYYY"
           )}\n${d3.format("$")(d.precio)}`,
         tip: true
       })
