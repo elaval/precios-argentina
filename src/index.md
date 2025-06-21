@@ -130,3 +130,65 @@ const chart = (() => {
 // **14. Importar Moment.js para las fechas**
 import moment from "npm:moment";
 ```
+
+```js
+function setLocaleMoment_ES() {
+  moment.locale("es");
+
+  moment.updateLocale("es", {
+    weekdays: [
+      "Domingo",
+      "Lunes",
+      "Martes",
+      "Miércoles",
+      "Jueves",
+      "Viernes",
+      "Sábado"
+    ]
+  });
+
+  moment.updateLocale("es", {
+    months: [
+      "Enero",
+      "Febrero",
+      "Marzo",
+      "Abril",
+      "Mayo",
+      "Junio",
+      "Julio",
+      "Agosto",
+      "Septiembre",
+      "Octubre",
+      "Noviembre",
+      "Diciembre"
+    ]
+  });
+
+  moment.updateLocale("es", {
+    monthsShort: [
+      "Ene",
+      "Feb",
+      "Mar",
+      "Abr",
+      "May",
+      "Jun",
+      "Jul",
+      "Ago",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dic"
+    ]
+  });
+
+  moment.updateLocale("es", {
+    weekdaysShort: ["Dom", "Lun", "Mar", "Mie", "Jue", "Vie", "Sab"]
+  });
+
+  moment.updateLocale("es", {
+    weekdaysMin: ["Do", "Lu", "Ma", "Mi", "Ju", "Vi", "Sa"]
+  });
+}
+
+setLocaleMoment_ES()
+```
